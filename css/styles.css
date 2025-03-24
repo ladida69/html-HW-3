@@ -299,60 +299,56 @@ footer {
 }
 
 /* Portfolio page */
-.filter-buttons .button {
+.filter-buttons {
+  display: flex;
+  font-family: Roboto;
   font-weight: 500;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 34px;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 2%;
-  color: #212121;
-  background: #f5f4fa;
-  text-align: match-parent;
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 3%;
+  text-align: center;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  & button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    outline: 1px solid var(--secondary-bg-color);
   }
-}
-
-button {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
-    color: #ffffff;
+    color: var(--accent-color);
   }
 }
 
 .portfolio-list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  & .item {
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: #000000;
+  margin-top: 34px;
+  margin-bottom: 94px;
+  box-shadow: var(--secondary-text-color);
+  background-color: var(--secondary-bg-color);
+  & img {
     border-radius: 10px;
-    overflow: hidden;
+  }
+  & h2 {
+    display: flex;
+    justify-content: center;
+  }
+  & p {
+    display: flex;
+    justify-content: center;
   }
 }
 
-/* .portfolio-list: nth-child(3n); */
-
-.card-description {
-  margin-top: 10px;
-  text-align: center;
-}
-/* >.item {
-  box-shadow: #041628;
-  border-radius: 10px;
-  overflow: hidden;
-} */
 footer .contacts-list {
   display: flex;
   flex-direction: column;
