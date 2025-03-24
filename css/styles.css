@@ -49,7 +49,6 @@ h6 {
   font-family: Roboto, sans-serif;
 }
 
-
 .section {
   width: 100%;
   max-width: 1230px;
@@ -112,7 +111,7 @@ h2 {
   text-decoration: none;
 
   color: var(--secondary-text-color);
-  
+
   &:hover {
     color: var(--accent-color);
   }
@@ -145,7 +144,7 @@ p {
   line-height: 1.875;
   letter-spacing: 3%;
 }
-.team{
+.team {
   background-color: var(--primary-dark-bg-color);
 }
 
@@ -155,6 +154,17 @@ p {
   line-height: 100%;
   letter-spacing: 3%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 94px; */
+}
+/* Foto dlia sekcii */
+.photo-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+  padding-bottom: 94px;
 }
 
 .team {
@@ -164,6 +174,23 @@ p {
   letter-spacing: 3%;
   background: var(--secondary-bg-color);
   list-style: none;
+  padding-top: 94px;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .slogan {
@@ -184,7 +211,6 @@ p {
 }
 
 .hero {
-  
   background: rgba(47, 48, 58, 1);
   width: 1600;
   height: 600;
@@ -198,6 +224,9 @@ p {
   display: flex;
   margin: 0;
   gap: 50px;
+  &:hover {
+    color: var(--accent-color);
+  }
   & a {
     font-weight: 400;
     text-decoration: none;
@@ -234,9 +263,7 @@ p {
 .features-list {
   display: flex;
   gap: 30px;
-  justify-content: flex-b;  
-  outline: 1px solid red;
-
+  justify-content: flex-b;
 }
 
 footer {
@@ -244,10 +271,13 @@ footer {
 }
 
 .logo-footer {
+  margin-top: 60px;
   font-family: Raleway, sans-serif;
+  display: inline-block;
   text-decoration: none;
   font-size: 26px;
   font-weight: 700;
+  margin-left: 215px;
   color: #ffffff;
   line-height: 1.5;
   & span {
@@ -257,12 +287,15 @@ footer {
 
 .address {
   font-weight: 400;
+  margin-top: 20px;
+  margin-left: 215px;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 3%;
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: #ffffff;
+  margin-bottom: 9px;
 }
 
 /* Portfolio page */
@@ -270,7 +303,7 @@ footer {
   font-weight: 500;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 2%;
@@ -299,9 +332,14 @@ button {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: -30px;
-  margin-top: 34px;
+  justify-content: center;
+  & .item {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 }
 
 /* .portfolio-list: nth-child(3n); */
@@ -315,3 +353,10 @@ button {
   border-radius: 10px;
   overflow: hidden;
 } */
+footer .contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-bottom: 60px;
+  margin-left: 215px;
+}
