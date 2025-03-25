@@ -321,9 +321,25 @@ footer {
     cursor: pointer;
     outline: 1px solid var(--secondary-bg-color);
   }
+  button {
+    background-color: var(--primary-text-color); 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+    cursor: pointer; 
+  }
+
+  button:hover {
+    background-color: var(--accent-hover-color); 
+  }
+
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: var(--accent-hover-color);
   }
 }
 
@@ -356,3 +372,9 @@ footer .contacts-list {
   padding-bottom: 60px;
   margin-left: 215px;
 }
+
+.contact:hover {
+  color: var(--accent-hover-color); 
+}
+ 
+
